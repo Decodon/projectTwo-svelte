@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubAccounts">
+    <account name="Decodon" id="7a2f2f46-aaff-4161-8d4f-99c42206505f">
+      <server host="github.com" />
+    </account>
+  </component>
+</application>
