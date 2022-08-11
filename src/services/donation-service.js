@@ -42,6 +42,7 @@ export class DonationService {
       });
       axios.defaults.headers.common["Authorization"] = "";
       localStorage.removeItem("donation");
+
   }
 
   async signup(firstName, lastName, email, password) {
