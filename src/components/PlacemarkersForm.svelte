@@ -6,7 +6,7 @@
     let latitude = 0;
     let longitude = 0;
 
-    let religionMethods = ["Paypal", "Cash", "Paypal", "Cash"];
+    let religionMethods = ["Catholic Church", "Church Of Ireland", "Islam", "Other"];
     let selectedReligion = "";
 
     let countiesList = [];
@@ -21,8 +21,8 @@
     async function placemarkers() {
         if (selectedCounties && latitude && longitude && selectedReligion) {
             const countiesNames = selectedCounties.split(',');
-            const counties = countiesList.find(counites => counties.name == countiesNames[0] && counties.province == countiesNames[1]);
-            const donation = {
+            const counties = countiesList.find(counties => counties.name == countiesNames[0] && counties.province == countiesNames[1]);
+            const placemarkers = {
                 latitude: latitude,
                 longitude: longitude,
                 religion: selectedReligion,

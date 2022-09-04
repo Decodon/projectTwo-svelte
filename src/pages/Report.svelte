@@ -3,6 +3,7 @@ import homer2 from "/src/assets/homer2.png";
 import DonationList from "../components/DonationList.svelte";
 import TitleBar from "../components/TitleBar.svelte";
 import MainNavigator from "../components/MainNavigator.svelte";
+import PlacemarkersList from "../components/PlacemarkersList.svelte";
 </script>
 
 <div class="columns is-vcentered">
@@ -20,6 +21,6 @@ import MainNavigator from "../components/MainNavigator.svelte";
     </div>
     <div class="column box has-text-centered">
         <h1 class="title is-4">Donations to date</h1>
-        <DonationList/>
+        <PlacemarkersList/>
     </div>
 </div>

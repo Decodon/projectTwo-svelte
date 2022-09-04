@@ -8,10 +8,10 @@
     let password = "";
     let errorMessage = "";
 
-    const donationService = getContext("DonationService");
+    const placemarkerService = getContext("PlacemarkersService");
 
     async function signup() {
-        let success = await donationService.signup(firstName, lastName, email, password)
+        let success = await placemarkerService.signup(firstName, lastName, email, password)
         if (success) {
             push("/");
         } else {

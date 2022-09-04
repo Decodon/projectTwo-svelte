@@ -11,10 +11,11 @@ onMount(async () => {
 
 <table class="table is-fullwidth">
     <thead>
-    <th>Amount</th>
-    <th>Method</th>
-    <th>Candidate</th>
-    <th>Donor</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Religion</th>
+    <th>County</th>
+    <th>Explorer</th>
     </thead>
     <tbody>
     {#each placemarkersList as placemarkers}
