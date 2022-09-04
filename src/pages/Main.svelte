@@ -4,8 +4,11 @@
     import TitleBar from "../components/TitleBar.svelte";
     import {getContext} from "svelte";
 
-    const donationService = getContext("DonationService");
-    donationService.logout();
+    const placemarkerService = getContext("PlacemarkersService");
+    placemarkerService.logout();
+
+    //const donationService = getContext("DonationService");
+    //donationService.logout();
 </script>
 
 <div class="columns is-vcentered">

@@ -1,23 +1,28 @@
 <script>
   import {setContext} from "svelte";
   import {DonationService} from "./services/donation-service";
+  import {PlacemarkersService} from "./services/placemarkers-service";
   import Main from "./pages/Main.svelte"
   import Login from "./pages/Login.svelte"
   import Signup from "./pages/Signup.svelte"
   import Donate from "./pages/Donate.svelte";
   import Report from "./pages/Report.svelte";
   import Router from "svelte-spa-router";
+  import Placemarkers from "./pages/Placemarkers.svelte";
 
-  setContext("DonationService", new DonationService("http://localhost:4000"));
+  setContext("PlacemarkersService", new PlacemarkersService("http://localhost:4000"));
+ // setContext("DonationService", new DonationService("http://localhost:4000"));
+
 
   let routes = {
     "/": Main,
     "/login": Login,
     "/signup": Signup,
     "/main": Main,
-    "/donate": Donate,
+   // "/donate": Donate,
     "/report": Report,
-    "/logout": Main
+    "/logout": Main,
+    "/placemarkers" : Placemarkers,
   }
 </script>
 
