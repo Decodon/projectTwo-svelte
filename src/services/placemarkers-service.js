@@ -62,7 +62,7 @@ export class PlacemarkersService {
 
   async placemarkers(placemarkers) {
       try {
-        const response = await axios.post(this.baseUrl + "/api/counties" + placemarkers.counties + "/placemarkers", placemarkers);
+        const response = await axios.post(this.baseUrl + "/api/counties/" + placemarkers.counties + "/placemarkers", placemarkers);
         return response.status == 200;
       } catch (error) {
         return false;
