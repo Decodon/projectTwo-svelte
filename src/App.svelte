@@ -10,6 +10,7 @@
   import Router from "svelte-spa-router";
   import Placemarkers from "./pages/Placemarkers.svelte";
   import Map from "./pages/Map.svelte";
+  import Charts from "./pages/Charts.svelte";
 
   setContext("PlacemarkersService", new PlacemarkersService("http://localhost:4000"));
  // setContext("DonationService", new DonationService("http://localhost:4000"));
@@ -25,6 +26,7 @@
     "/logout": Main,
     "/placemarkers" : Placemarkers,
     "/map": Map,
+    "/charts": Charts,
   }
 </script>
 
