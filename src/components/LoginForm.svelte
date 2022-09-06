@@ -8,7 +8,6 @@
 
 
     const placemarkersService = getContext("PlacemarkersService");
-    //const donationService = getContext("DonationService");
 
     async function login() {
         let success = await placemarkersService.login(email, password)

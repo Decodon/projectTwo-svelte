@@ -1,6 +1,6 @@
 <div class="box has-text-centered columns auto">
-    <a href="/#/donate" class="column auto">
-        <i class="fas fa-hand-holding-usd fa-3x" style="color:rgb(153, 196, 74)"></i>
+    <a href="/#/placemarkers" class="column auto">
+        <i class="fas fa-church fa-3x" style="color:rgb(153, 196, 74)"></i>
     </a>
     <a href="/#/report" class="column auto">
         <i class="fas fa-th-list fa-3x" style="color:rgb(63, 122, 139)"></i>

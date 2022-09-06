@@ -1,5 +1,5 @@
 <script>
-    import homer from "/src/assets/homer.png"
+    import church3 from "/src/assets/church3.jpg"
     export let title = "";
     export let subTitle = "";
     import {user} from "../stores.js"
@@ -7,7 +7,7 @@
 
 <div class="box has-text-centered columns m-2">
     <div class="column">
-        <img src="{homer}" width="60" alt="img"/>
+        <img src="{church3}" width="100" alt="img"/>
     </div>
     <div class="column">
         <div class="title is-5"> {title} </div>

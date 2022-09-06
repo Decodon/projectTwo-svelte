@@ -14,7 +14,7 @@
     let lat = 52.160858;
     let lng = -7.152420;
 
-    let message = "Please donate";
+    let message = "Please enter a Placemarker";
 
 
     onMount(async () => {
@@ -33,15 +33,15 @@
             };
             const success = await placemarkersService.placemarkers(placemarkers);
             if (!success) {
-                message = "Donation not completed - some error occurred";
+                message = "Placemarker not completed - some error occurred";
                 return;
             }
-            message = `Thanks! You donated ${lat} & ${lng} to ${counties.name} ${counties.province}`;
+            message = `Thanks! visited this location ${lat} & ${lng} in ${counties.name} ${counties.province}`;
             dispatch("message", {
                 placemarkers: placemarkers,
             });
         } else {
-            message = "Please select amount, method and candidate";
+            message = "Please select religion, area and location";
         }
     }
 </script>
@@ -66,7 +66,7 @@
     <Coordinates bind:lat={lat} bind:lng={lng}/>
     <div class="field">
         <div class="control">
-            <button class="button is-link is-light">Donate</button>
+            <button class="button is-link is-light">Enter</button>
         </div>
     </div>
     <div class="box">

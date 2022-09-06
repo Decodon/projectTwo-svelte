@@ -1,5 +1,5 @@
 <script>
-    import homer from "/src/assets/homer.png";
+    import church1 from "/src/assets/church1.jpg";
     import WelcomeNavigator from "../components/WelcomeNavigator.svelte";
     import TitleBar from "../components/TitleBar.svelte";
     import {getContext} from "svelte";
@@ -7,13 +7,11 @@
     const placemarkerService = getContext("PlacemarkersService");
     placemarkerService.logout();
 
-    //const donationService = getContext("DonationService");
-    //donationService.logout();
 </script>
 
 <div class="columns is-vcentered">
     <div class="column is-two-thirds">
-        <TitleBar title={"Donation Services Inc."} subTitle={"Sign up or Log in"}/>
+        <TitleBar title={"Church Placemarkers!"} subTitle={"Sign up or Log in"}/>
     </div>
     <div class="column">
         <WelcomeNavigator/>
@@ -22,7 +20,7 @@
 
 <div class="columns is-vcentered content">
     <div class="column has-text-centered">
-        <img width="300" src="{homer}" alt="homer">
+        <img width="400" src="{church1}" alt="church">
     </div>
     <div class="column">
         <h1 class="title">Help Me Run Springfield</h1>

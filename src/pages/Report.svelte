@@ -1,6 +1,5 @@
 <script>
-import homer2 from "/src/assets/homer2.png";
-import DonationList from "../components/DonationList.svelte";
+import church4 from "/src/assets/church4.jpg";
 import TitleBar from "../components/TitleBar.svelte";
 import MainNavigator from "../components/MainNavigator.svelte";
 import PlacemarkersList from "../components/PlacemarkersList.svelte";
@@ -8,7 +7,7 @@ import PlacemarkersList from "../components/PlacemarkersList.svelte";
 
 <div class="columns is-vcentered">
     <div class="column is-two-thirds">
-        <TitleBar subTitle={"Donations so far..."} title={"Donation Services Inc."}/>
+        <TitleBar subTitle={"Visited so far"} title={"Church Placemarkers!"}/>
     </div>
     <div class="column">
         <MainNavigator/>
@@ -17,10 +16,10 @@ import PlacemarkersList from "../components/PlacemarkersList.svelte";
 
 <div class="columns">
     <div class="column has-text-centered">
-        <img alt="Homer" src={homer2} width="300"/>
+        <img alt="Homer" src={church4} width="400"/>
     </div>
     <div class="column box has-text-centered">
-        <h1 class="title is-4">Donations to date</h1>
+        <h1 class="title is-4">Visited so far</h1>
         <PlacemarkersList/>
     </div>
 </div>
