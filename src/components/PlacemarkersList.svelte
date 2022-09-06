@@ -21,10 +21,10 @@ onMount(async () => {
     {#each placemarkersList as placemarkers}
         <tr>
             <td>
-                {placemarkers.latitude}
+                {placemarkers.lat}
             </td>
             <td>
-                {placemarkers.longitude}
+                {placemarkers.lng}
             </td>
             <td>
                 {placemarkers.religion}
@@ -33,7 +33,7 @@ onMount(async () => {
                 {placemarkers.counties.name}, {placemarkers.counties.province}
             </td>
             <td>
-                {placemarkers.explorer.lastName},  {placemarkers.explorer.lastName}
+                {placemarkers.explorer.firstName},  {placemarkers.explorer.lastName}
             </td>
         </tr>
     {/each}
